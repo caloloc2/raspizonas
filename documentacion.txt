@@ -1,0 +1,22 @@
+CONTROL DE ZONAS CON INTERFAZ WEB
+
+El proyecto tiene los siguientes archivos:
+
+index.html
+	Donde se encuentra la maquetacion de la interfaz.
+css/
+	Carpeta que contiene los estilos de la pagina anterior, colores, cuadros, etc.
+js/
+	Carpeta que contiene el framework de Javascrip jquery para que se ejecute en el navegador y que basicamente hace que se recargue automaticamente.
+	Existe el archivo main.js que tiene 3 funciones que hacen el llamado a los archivos hora.php y reles.php y muestran los mensajes.
+
+hora.php y hora.rsp
+	hora.php archivo que al recibir la hora desde la interfaz la guarda en el archivo hora.rsp que sera leido en la raspberry.
+
+reles.php y estados.rsp
+	reles.php archivo que recibe la zona a encender o apagar desde la interfaz y lo guarda en el archivo estados.rsp que sera leido en la raspi.
+
+control.py
+	Este archivo es el que se ejecuta en la raspberry y que lee los archivos rsp anteriores.
+	Dependiendo de la configuracion que se ejecute en la interfaz ira prendiendo las zonas correspondientes.
+	Este archivo debera ejecutarse en consola y dejarlo ejecutandose siempre.

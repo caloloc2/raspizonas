@@ -1,0 +1,74 @@
+* 
+	margin 0
+	padding 0
+
+a 
+	text-decoration none
+
+ul, ol
+	list-style none
+
+body
+	padding 5em
+	text-align center
+	width 600px
+	margin 0 auto 
+	
+	.zonas
+		
+		.item
+			display inline-block
+			vertical-align middle
+			margin 2em
+			
+			a 
+				border 1px solid rgba(0,0,0,0.1)
+				border-radius 0.3em
+				padding 0.7em 1em
+				text-transform uppercase
+				color #666
+				transition all 0.3s linear
+				font-size 25px
+			
+			a:hover
+				color black
+				border 1px solid rgba(0,0,0,0.4)
+			
+			.activo
+				background #1976D2
+				color white
+			
+			.activo:hover
+				color white
+				background #2196F3
+	
+	form
+		padding 5em 0 2em 0
+		width 170px 
+		margin 0 auto
+		
+		input
+			display block
+			width 100%
+			
+		input[type='time']			
+			border 1px solid rgba(0,0,0,0.1)
+			font-size 25px 
+			color #333
+			border-radius 0.3em
+			
+		input[type='submit']
+			border 1px solid rgba(0,0,0,0.1)
+			font-size 15px 			
+			border-radius 0.3em
+			margin 1em 0
+			padding 0.5em 0.8em
+			background #7C4DFF
+			color white
+			cursor pointer
+	
+	.mensaje
+		width 100%
+		color #666
+		font-size 15px
+		display none
